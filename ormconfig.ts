@@ -10,7 +10,7 @@ module.exports = {
     "synchronize": true,
     "logging": false,
     "entities": [
-       "build/src/database/entity/*.js"
+       "./build/src/database/entity/*.js"
     ],
     "migrations": [
        "src/database/migration/**/*.js"
