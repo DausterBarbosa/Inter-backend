@@ -1,3 +1,5 @@
+require('dotenv/config');
+
 import "express-async-errors";
 
 import express from "express";
@@ -16,4 +18,4 @@ app.use(express.json());
 app.use(routes);
 app.use(globalErrors);
 
-app.listen(3333);
+app.listen(process.env.PORT || 3333);
